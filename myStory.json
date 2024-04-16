@@ -1,0 +1,184 @@
+{
+    "Title": "Legacy",
+    "Credits": "Created by Mitchell Tai.",
+    "InitialLocation": "Start",
+    "windowkey":"0",
+    "Locations": {
+        "Start": {
+            "Body": "As you lie in your hospital bed, the world outside your window seems both tantalizingly close and impossibly distant. The soft glow of the television casts flickering shadows across the room, offering a fleeting escape from the stark reality of your condition. Your only companion is the patient in the bed beside you, a silent figure who shares in your solitude. With each passing moment, the weight of your mortality grows heavier. The doctors have given you only a few days left to live, leaving you to ponder the meaning of your existence and the legacy you will leave behind. In this confined space, your options are limited: you can engage in small talk with your neighbor, immerse yourself in the world on the screen, or gaze out at the world beyond your reach.",
+            "Choices": [
+                {
+                    "Text": "Turn on the TV",
+                    "Target": "TVx"
+                },
+                {
+                    "Text": "Talk to your Neighbor",
+                    "Target": "Neighbor"
+                }
+                ,
+                {
+                    "Text": "Look out the window",
+                    "Target": "Window"
+                }
+            ]
+        },
+        "TVx": {
+            "Body": "Woah you found a secret! How did you get here?",
+            "Choices": [
+                {
+                    "Text": "Turn off TV",
+                    "Target": "Start1"
+                },
+                {
+                    "Text": "Change channel",
+                    "Target": "TVx0"
+                }
+            ]
+        },
+        "TVx0": {
+            "Body": "As you tune in, vibrant coral reefs sway gently, colorful fish darting between them. The camera pans to a dense rainforest, where monkeys play in the treetops and exotic birds sing. The tranquil scenes offer a moment of escape, a reminder of the beauty and resilience of the natural world.",
+            "Choices": [
+                {
+                    "Text": "Turn off TV",
+                    "Target": "Start1"
+                },
+                {
+                    "Text": "Change channel",
+                    "Target": "TVx1"
+                }
+            ]
+        },
+        "TVx1": {
+            "Body": "Nostalgic clips from classic movies and TV shows fill the screen, evoking memories of simpler times. Scenes from your favorite childhood cartoons and iconic moments from the past bring a sense of comfort and warmth. The channel offers a chance to relive cherished memories and revisit beloved stories from the past.",
+            "Choices": [
+                {
+                    "Text": "Turn off TV",
+                    "Target": "Start1"
+                },
+                {
+                    "Text": "Change channel",
+                    "Target": "TVx2"
+                }
+            ]
+        },
+        "TVx2": {
+            "Body": " Intimate documentaries and biographies of extraordinary individuals unfold before you. Stories of resilience, courage, and triumph over adversity captivate your attention. From ordinary people who became heroes to remarkable individuals who changed the course of history, these life stories inspire reflection on your own journey and the legacy you will leave behind.",
+            "Choices": [
+                {
+                    "Text": "Turn off TV",
+                    "Target": "Start1"
+                },
+                {
+                    "Text": "Change channel",
+                    "Target": "TVx3"
+                }
+            ]
+        },
+        "TVx3": {
+            "Body": "Despite your attempts to tune in, the screen remains blank, displaying only static and occasional bursts of sound. The channel's description promised thrilling adventures and daring escapades, but all you hear are garbled voices and distorted music. Frustration mounts as you realize that this channel, like so many things in life, is beyond your control.",
+            "Choices": [
+                {
+                    "Text": "Turn off TV",
+                    "Target": "Start1"
+                },
+                {
+                    "Text": "Change channel",
+                    "Target": "TVx0"
+                }
+            ]
+        },
+        "Neighbor": {
+            "Body": "Your neighbor, a gentle elderly man, sits in his bed, blind but with a keen curiosity about his surroundings. He often asks the nurses to describe the hospital room and its surroundings, but their descriptions are often brief and lacking in detail.He turns to you, hoping that you might be able to provide more vivid descriptions. He asks about the layout of the room, the color of the walls, and the sounds that fill the air. You do your best to paint a picture with your words, describing the room in vivid detail, from the soft beige walls to the gentle hum of the machines. He listens intently, absorbing every word, and you can sense his appreciation for your efforts. Despite his blindness, he remains curious and engaged, finding joy in learning about his surroundings through your descriptions. In this small way, you are able to brighten his days, providing him with a glimpse of the world he cannot see.",
+            "Choices": [
+                {
+                    "Text": "Go back to your bed",
+                    "Target": "Start1"
+                },
+                {
+                    "Text": "Tell him about the window",
+                    "Target": "WindowN"
+                }
+            ]
+        },
+        "Start1": {
+            "Body": "You look around... unfortunately still stuck in the small hospital room, with a bed, a TV mounted on the wall, and a window offering a view of the outside world. You can:",
+            "Choices": [
+                {
+                    "Text": "Turn on the TV",
+                    "Target": "TVx"
+                },
+                {
+                    "Text": "Talk to your Neighbor",
+                    "Target": "Neighbor"
+                }
+                ,
+                {
+                    "Text": "Look out the window",
+                    "Target": "Window"
+                }
+            ]
+        },
+        "Window": {
+            "Body": "You approach the window and look out, only to find a disappointing sight: a brick wall from a neighboring building blocks any view of the outside world.",
+            "Choices": [
+                {
+                    "Text": "Jump out",
+                    "Target": "Badend"
+                },
+                {
+                    "Text": "Go back to your bed",
+                    "Target": "Start1"
+                }
+            ]
+        },
+        "WindowN": {
+            "Body": "On second thought... you never looked out the window...",
+            "Choices": [
+                {
+                    "Text": "Go back to your bed",
+                    "Target": "Start1"
+                }
+            ]
+        },
+        "WindowN1": {
+            "Body": "You begin to tell him about the window, the old man seems excited to recieve new information about the world around him...",
+            "Choices": [
+                {
+                    "Text": "Tell the truth",
+                    "Target": "WindowN2"
+                },
+                {
+                    "Text": "Tell him a story",
+                    "Target": "WindowN3"
+                }
+            ]
+        },
+        "WindowN2": {
+            "Body": "You take a deep breath, deciding to be honest with your neighbor. 'Actually,' you begin, 'the window doesn't really offer much of a view. It's just a brick wall from the building next door.'There's a moment of silence as he processes this information. 'I see,' he says quietly. 'Well, that's disappointing,but I appreciate you telling me the truth. I suppose I'll have to rely on your descriptions to imagine the world outside.' You feel a pang of guilt for dashing his hopes,but you figure it's better to tell the truth than to lie. 'Anyways, it's getting late, i'll see you tomorrow...'",
+            "Choices": [
+                {
+                    "Text": "Say goodnight and go to bed",
+                    "Target": "End1"
+                }
+            ]
+        },
+        "WindowN3": {
+            "Body": "You decide to have a little fun and tell your neighbor a playful lie about the view outside the window.'The window actually overlooks a lush, tropical paradise,' you begin. 'There are palm trees swaying in the gentle breeze, their leaves rustling softly. Colorful parrots and monkeys playfully frolic in the branches, adding to the lively scene. In the distance, you can see a pristine beach with crystal-clear waters, inviting you for a relaxing swim.' Your neighbor's eyes widen in amazement as he listens to your description. 'That sounds absolutely amazing,' he exclaims. 'I never would have guessed that such a paradise existed just outside this window!' You share a laugh together, both enjoying the brief escape from reality that your playful lie has provided. Sometimes, a little imagination is all it takes to brighten someone's day, even in the confines of a hospital room. You lost track of time telling this fantastical story and it's getting late...",
+            "Choices": [
+                {
+                    "Text": "Say goodnight and go to bed",
+                    "Target": "End2"
+                }
+            ]
+        },
+        "Badend": {
+            "Body": "As the bleak reality of the hospital room weighs heavily on you, you start to feel overwhelmed.... you make a rash decision. You throw open the window and leap out, as you're falling you realize the gravity of your actions. In your final moments, you regret not taking the time to talk more with your neighbor, to share a moment of connection and companionship in the face of adversity. But now, it's too late, and all that remains is the cold, unforgiving reality of your decision."
+        },
+        "End1": {
+            "Body": "After sharing the truth about the window with your neighbor, you settle into bed, feeling a sense of closure and peace. As you drift off to sleep, you reflect on the brief but meaningful connection you shared. The next morning, the nurses find you peacefully in your bed, but you are no longer breathing. It appears that you have passed away in your sleep. Despite the sadness of your passing, your neighbor is grateful for the honesty and companionship you provided in your final days. As he looks out the window at the brick wall, he remembers your descriptions of the world outside and finds solace in the memories you shared. Your time in the hospital may have been short, but the impact you had on your neighbor's life will be everlasting. In death, you have left behind a legacy of kindness, empathy, and friendship."
+        },
+        "End2": {
+            "Body": "After telling your neighbor the imaginative story about the window, you feel a sense of satisfaction in having brought a moment of joy into his life. That night, you fall asleep with a smile on your face, the memory of your shared laughter still fresh in your mind. However, when morning comes, you do not wake up. The nurses find you peacefully in your bed, but it is clear that you have passed away in your sleep. Your neighbor is saddened by your sudden departure, but he finds comfort in the memory of the magical world you described to him. As he looks out the window at the brick wall, he imagines the paradise you spoke of, a lasting tribute to your creativity and kindness. In death, you have left behind a legacy of storytelling and imagination, touching the life of your neighbor in a profound and lasting way."
+        }
+    }
+}
